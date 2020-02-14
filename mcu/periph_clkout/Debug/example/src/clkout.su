@@ -1,0 +1,6 @@
+core_cm3.h:1405:22:NVIC_SetPriority	16	static
+core_cm3.h:1532:26:SysTick_Config	16	static
+clock_17xx_40xx.h:706:20:Chip_Clock_EnableCLKOUT	4	static
+clock_17xx_40xx.h:715:20:Chip_Clock_DisableCLKOUT	4	static
+clkout.c:64:6:SysTick_Handler	8	static
+clkout.c:76:5:main	16	static

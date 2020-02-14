@@ -24,9 +24,6 @@ typedef struct queue
 
 mainqueue jK;
 
-//jK.first=-1;
-//jK.last=-1;
-
 int emptyCheckQ(void)
 {
     if(jK.last== -1)
@@ -84,7 +81,7 @@ int main ()
     printf("dequeued element is : %d\n",deqEle);
     deqEle=dequeue();
     printf("dequeued element is : %d\n",deqEle);
-    printf("dequeued element after dequeing twice is :\n");
+    printf("dequeued element after dequeuing twice is :\n");
     for (int i=0;i<=jK.last;i++)
         printf("%d\t", jK.q[i]);
     printf("\n");
