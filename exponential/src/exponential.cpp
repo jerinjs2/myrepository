@@ -14,7 +14,8 @@ int main() {
   float x = 10.5, sum = 1, term = 1, temp = 0;
   int i = 0;
 
-  while (temp != sum) {
+  while (temp != sum)
+  {
     i++;
     term = term * x / i;
     temp = sum;

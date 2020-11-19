@@ -288,9 +288,9 @@ Discarded input sections
  .text.Board_UARTPutSTR
                 0x0000000000000000       0x28 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Board_LED_Test
-                0x0000000000000000       0x30 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000000000000000       0x5c /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Board_LED_Toggle
-                0x0000000000000000       0x42 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000000000000000       0xa6 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .rodata        0x0000000000000000        0x6 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Board_ENET_GetMacADDR
                 0x0000000000000000       0x34 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
@@ -1491,7 +1491,7 @@ END GROUP
                 0x0000000020084000                __top_RamAHB32 = 0x20084000
                 0x0000000020084000                __top_RAM2 = 0x20084000
 
-.text           0x0000000000000000     0x259c
+.text           0x0000000000000000     0x25f8
  FILL mask 0xff
                 0x0000000000000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -1500,10 +1500,10 @@ END GROUP
                 0x00000000000000cc                . = ALIGN (0x4)
                 0x00000000000000cc                __section_table_start = .
                 0x00000000000000cc                __data_section_table = .
-                0x00000000000000cc        0x4 LONG 0x259c LOADADDR (.data)
+                0x00000000000000cc        0x4 LONG 0x25f8 LOADADDR (.data)
                 0x00000000000000d0        0x4 LONG 0x10000000 ADDR (.data)
                 0x00000000000000d4        0x4 LONG 0x60 SIZEOF (.data)
-                0x00000000000000d8        0x4 LONG 0x259c LOADADDR (.data_RAM2)
+                0x00000000000000d8        0x4 LONG 0x25f8 LOADADDR (.data_RAM2)
                 0x00000000000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
                 0x00000000000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x00000000000000e4                __data_section_table_end = .
@@ -1621,361 +1621,361 @@ END GROUP
                 0x0000000000000830       0x38 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
                 0x0000000000000830                __sys_write
  .text.Board_LED_Init
-                0x0000000000000868       0x18 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000000000000868       0x30 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Board_UART_Init
-                0x0000000000000880       0x12 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x0000000000000880                Board_UART_Init
- *fill*         0x0000000000000892        0x2 ff
+                0x0000000000000898       0x12 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000000000000898                Board_UART_Init
+ *fill*         0x00000000000008aa        0x2 ff
  .text.Board_Debug_Init
-                0x0000000000000894       0x30 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x0000000000000894                Board_Debug_Init
+                0x00000000000008ac       0x30 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000000000008ac                Board_Debug_Init
  .text.Board_UARTPutChar
-                0x00000000000008c4       0x34 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x00000000000008c4                Board_UARTPutChar
+                0x00000000000008dc       0x34 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000000000008dc                Board_UARTPutChar
  .text.Board_LED_Set
-                0x00000000000008f8       0x30 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x00000000000008f8                Board_LED_Set
+                0x0000000000000910       0x74 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000000000000910                Board_LED_Set
  .text.Board_Init
-                0x0000000000000928       0x24 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x0000000000000928                Board_Init
+                0x0000000000000984       0x24 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000000000000984                Board_Init
  .text.Board_SSP_Init
-                0x000000000000094c       0xa4 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x000000000000094c                Board_SSP_Init
+                0x00000000000009a8       0xa4 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000000000009a8                Board_SSP_Init
  .text.Board_SPI_Init
-                0x00000000000009f0       0x84 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x00000000000009f0                Board_SPI_Init
+                0x0000000000000a4c       0x84 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000000000000a4c                Board_SPI_Init
  .text.Board_SPI_AssertSSEL
-                0x0000000000000a74       0x18 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x0000000000000a74                Board_SPI_AssertSSEL
+                0x0000000000000ad0       0x18 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000000000000ad0                Board_SPI_AssertSSEL
  .text.Board_SPI_DeassertSSEL
-                0x0000000000000a8c       0x18 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x0000000000000a8c                Board_SPI_DeassertSSEL
+                0x0000000000000ae8       0x18 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000000000000ae8                Board_SPI_DeassertSSEL
  .text.Chip_SYSCTL_SetFLASHAccess
-                0x0000000000000aa4       0x30 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x0000000000000b00       0x30 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
  .text.Board_SetupMuxing
-                0x0000000000000ad4       0x1c /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
-                0x0000000000000ad4                Board_SetupMuxing
+                0x0000000000000b30       0x1c /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x0000000000000b30                Board_SetupMuxing
  .text.Board_SetupClocking
-                0x0000000000000af0       0x12 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
-                0x0000000000000af0                Board_SetupClocking
+                0x0000000000000b4c       0x12 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x0000000000000b4c                Board_SetupClocking
  .text.Board_SystemInit
-                0x0000000000000b02       0x10 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
-                0x0000000000000b02                Board_SystemInit
- *fill*         0x0000000000000b12        0x2 ff
+                0x0000000000000b5e       0x10 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x0000000000000b5e                Board_SystemInit
+ *fill*         0x0000000000000b6e        0x2 ff
  .text.SystemCoreClockUpdate
-                0x0000000000000b14       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
-                0x0000000000000b14                SystemCoreClockUpdate
+                0x0000000000000b70       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x0000000000000b70                SystemCoreClockUpdate
  .text.Chip_Clock_IsMainPLLEnabled
-                0x0000000000000b2c       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000b88       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLConnected
-                0x0000000000000b50       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000bac       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_FeedPLL
-                0x0000000000000b74       0x34 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000bd0       0x34 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainPLLSource
-                0x0000000000000ba8       0x20 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000c04       0x20 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainOscRate
-                0x0000000000000bc8       0x14 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000c24       0x14 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetIntOscRate
-                0x0000000000000bdc       0x14 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000c38       0x14 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetRTCOscRate
-                0x0000000000000bf0       0x14 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000c4c       0x14 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainPLLInClockRate
-                0x0000000000000c04        0xe /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- *fill*         0x0000000000000c12        0x2 ff
+                0x0000000000000c60        0xe /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ *fill*         0x0000000000000c6e        0x2 ff
  .text.Chip_Clock_EnablePLL
-                0x0000000000000c14       0x44 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000c14                Chip_Clock_EnablePLL
+                0x0000000000000c70       0x44 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000c70                Chip_Clock_EnablePLL
  .text.Chip_Clock_DisablePLL
-                0x0000000000000c58       0x48 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000c58                Chip_Clock_DisablePLL
+                0x0000000000000cb4       0x48 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000cb4                Chip_Clock_DisablePLL
  .text.Chip_Clock_SetupPLL
-                0x0000000000000ca0       0x5c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000ca0                Chip_Clock_SetupPLL
+                0x0000000000000cfc       0x5c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000cfc                Chip_Clock_SetupPLL
  .text.Chip_Clock_EnablePeriphClock
-                0x0000000000000cfc       0x34 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000cfc                Chip_Clock_EnablePeriphClock
+                0x0000000000000d58       0x34 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000d58                Chip_Clock_EnablePeriphClock
  .text.Chip_Clock_DisablePeriphClock
-                0x0000000000000d30       0x38 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000d30                Chip_Clock_DisablePeriphClock
+                0x0000000000000d8c       0x38 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000d8c                Chip_Clock_DisablePeriphClock
  .text.Chip_Clock_GetCPUClockSource
-                0x0000000000000d68       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000d68                Chip_Clock_GetCPUClockSource
+                0x0000000000000dc4       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000dc4                Chip_Clock_GetCPUClockSource
  .text.Chip_Clock_SetCPUClockDiv
-                0x0000000000000d8c       0x20 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000d8c                Chip_Clock_SetCPUClockDiv
+                0x0000000000000de8       0x20 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000de8                Chip_Clock_SetCPUClockDiv
  .text.Chip_Clock_GetCPUClockDiv
-                0x0000000000000dac       0x1c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000dac                Chip_Clock_GetCPUClockDiv
+                0x0000000000000e08       0x1c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000e08                Chip_Clock_GetCPUClockDiv
  .text.Chip_Clock_GetPCLKDiv
-                0x0000000000000dc8       0x8c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000dc8                Chip_Clock_GetPCLKDiv
+                0x0000000000000e24       0x8c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000e24                Chip_Clock_GetPCLKDiv
  .text.Chip_Clock_GetSYSCLKRate
-                0x0000000000000e54       0x34 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000e54                Chip_Clock_GetSYSCLKRate
+                0x0000000000000eb0       0x34 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000eb0                Chip_Clock_GetSYSCLKRate
  .text.Chip_Clock_GetMainPLLOutClockRate
-                0x0000000000000e88       0x54 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000e88                Chip_Clock_GetMainPLLOutClockRate
+                0x0000000000000ee4       0x54 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000ee4                Chip_Clock_GetMainPLLOutClockRate
  .text.Chip_Clock_GetMainClockRate
-                0x0000000000000edc       0x28 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000edc                Chip_Clock_GetMainClockRate
+                0x0000000000000f38       0x28 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000f38                Chip_Clock_GetMainClockRate
  .text.Chip_Clock_GetSystemClockRate
-                0x0000000000000f04       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000f04                Chip_Clock_GetSystemClockRate
+                0x0000000000000f60       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000f60                Chip_Clock_GetSystemClockRate
  .text.Chip_Clock_GetPeripheralClockRate
-                0x0000000000000f1c       0x26 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000000000000f1c                Chip_Clock_GetPeripheralClockRate
- *fill*         0x0000000000000f42        0x2 ff
+                0x0000000000000f78       0x26 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000000000000f78                Chip_Clock_GetPeripheralClockRate
+ *fill*         0x0000000000000f9e        0x2 ff
  .text.configDMAMux
-                0x0000000000000f44       0x68 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x0000000000000fa0       0x68 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
  .text.makeCtrlWord
-                0x0000000000000fac      0x124 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x0000000000000fac                makeCtrlWord
+                0x0000000000001008      0x124 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x0000000000001008                makeCtrlWord
  .text.setupChannel
-                0x00000000000010d0       0xbc /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x00000000000010d0                setupChannel
+                0x000000000000112c       0xbc /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x000000000000112c                setupChannel
  .text.Chip_GPDMA_Init
-                0x000000000000118c       0x64 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x000000000000118c                Chip_GPDMA_Init
+                0x00000000000011e8       0x64 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x00000000000011e8                Chip_GPDMA_Init
  .text.Chip_GPDMA_Interrupt
-                0x00000000000011f0       0x6c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x00000000000011f0                Chip_GPDMA_Interrupt
+                0x000000000000124c       0x6c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x000000000000124c                Chip_GPDMA_Interrupt
  .text.Chip_GPDMA_InitChannelCfg
-                0x000000000000125c       0xe0 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x000000000000125c                Chip_GPDMA_InitChannelCfg
+                0x00000000000012b8       0xe0 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x00000000000012b8                Chip_GPDMA_InitChannelCfg
  .text.Chip_GPDMA_IntGetStatus
-                0x000000000000133c       0xbc /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x000000000000133c                Chip_GPDMA_IntGetStatus
+                0x0000000000001398       0xbc /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x0000000000001398                Chip_GPDMA_IntGetStatus
  .text.Chip_GPDMA_ClearIntPending
-                0x00000000000013f8       0x3e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x00000000000013f8                Chip_GPDMA_ClearIntPending
+                0x0000000000001454       0x3e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x0000000000001454                Chip_GPDMA_ClearIntPending
  .text.Chip_GPDMA_ChannelCmd
-                0x0000000000001436       0x46 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x0000000000001436                Chip_GPDMA_ChannelCmd
+                0x0000000000001492       0x46 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x0000000000001492                Chip_GPDMA_ChannelCmd
  .text.Chip_GPDMA_Transfer
-                0x000000000000147c       0xf4 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x000000000000147c                Chip_GPDMA_Transfer
+                0x00000000000014d8       0xf4 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x00000000000014d8                Chip_GPDMA_Transfer
  .text.Chip_GPDMA_GetFreeChannel
-                0x0000000000001570       0x58 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x0000000000001570                Chip_GPDMA_GetFreeChannel
+                0x00000000000015cc       0x58 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x00000000000015cc                Chip_GPDMA_GetFreeChannel
  .text.Chip_IOCON_PinMuxSet
-                0x00000000000015c8       0x36 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x00000000000015c8                Chip_IOCON_PinMuxSet
+                0x0000000000001624       0x36 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x0000000000001624                Chip_IOCON_PinMuxSet
  .text.Chip_IOCON_PinMux
-                0x00000000000015fe       0x94 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x00000000000015fe                Chip_IOCON_PinMux
+                0x000000000000165a       0x94 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x000000000000165a                Chip_IOCON_PinMux
  .text.Chip_IOCON_SetPinMuxing
-                0x0000000000001692       0x62 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x0000000000001692                Chip_IOCON_SetPinMuxing
+                0x00000000000016ee       0x62 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000000000016ee                Chip_IOCON_SetPinMuxing
  .text.Chip_SPI_GetStatus
-                0x00000000000016f4       0x16 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x0000000000001750       0x16 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
  .text.Chip_SPI_SendFrame
-                0x000000000000170a       0x1c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x0000000000001766       0x1c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
  .text.Chip_SPI_ReceiveFrame
-                0x0000000000001726       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x0000000000001782       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
  .text.Chip_SPI_SetClockCounter
-                0x000000000000173e       0x1a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x000000000000179a       0x1a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
  .text.Chip_SPI_GetDataSize
-                0x0000000000001758       0x30 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x00000000000017b4       0x30 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
  .text.Chip_SPI_SetMode
-                0x0000000000001788       0x26 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x00000000000017e4       0x26 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
  .text.Chip_SPI_Int_ClearStatus
-                0x00000000000017ae       0x1a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x000000000000180a       0x1a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
  .text.executeCallback
-                0x00000000000017c8       0x1c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x0000000000001824       0x1c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
  .text.writeData
-                0x00000000000017e4       0x5c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x0000000000001840       0x5c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
  .text.readData
-                0x0000000000001840       0x56 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x000000000000189c       0x56 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
  .text.Chip_SPI_RWFrames_Blocking
-                0x0000000000001896       0xbc /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
-                0x0000000000001896                Chip_SPI_RWFrames_Blocking
+                0x00000000000018f2       0xbc /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x00000000000018f2                Chip_SPI_RWFrames_Blocking
  .text.Chip_SPI_Int_FlushData
-                0x0000000000001952       0x28 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
-                0x0000000000001952                Chip_SPI_Int_FlushData
+                0x00000000000019ae       0x28 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x00000000000019ae                Chip_SPI_Int_FlushData
  .text.Chip_SPI_SetBitRate
-                0x000000000000197a       0x4a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
-                0x000000000000197a                Chip_SPI_SetBitRate
+                0x00000000000019d6       0x4a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x00000000000019d6                Chip_SPI_SetBitRate
  .text.Chip_SPI_Init
-                0x00000000000019c4       0x44 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
-                0x00000000000019c4                Chip_SPI_Init
+                0x0000000000001a20       0x44 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x0000000000001a20                Chip_SPI_Init
  .text.Chip_SPI_DeInit
-                0x0000000000001a08       0x16 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
-                0x0000000000001a08                Chip_SPI_DeInit
+                0x0000000000001a64       0x16 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+                0x0000000000001a64                Chip_SPI_DeInit
  .text.Chip_SSP_Disable
-                0x0000000000001a1e       0x1e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+                0x0000000000001a7a       0x1e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
  .text.Chip_SSP_SetFormat
-                0x0000000000001a3c       0x30 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+                0x0000000000001a98       0x30 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
  .text.Chip_SSP_Set_Mode
-                0x0000000000001a6c       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+                0x0000000000001ac8       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
  .text.Chip_SSP_GetClockIndex
-                0x0000000000001a90       0x2c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+                0x0000000000001aec       0x2c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
  .text.Chip_SSP_GetClkIndex
-                0x0000000000001abc       0x2c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+                0x0000000000001b18       0x2c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
  .text.Chip_SSP_SetClockRate
-                0x0000000000001ae8       0x34 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
-                0x0000000000001ae8                Chip_SSP_SetClockRate
+                0x0000000000001b44       0x34 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+                0x0000000000001b44                Chip_SSP_SetClockRate
  .text.Chip_SSP_SetMaster
-                0x0000000000001b1c       0x2c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
-                0x0000000000001b1c                Chip_SSP_SetMaster
+                0x0000000000001b78       0x2c /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+                0x0000000000001b78                Chip_SSP_SetMaster
  .text.Chip_SSP_SetBitRate
-                0x0000000000001b48       0x74 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
-                0x0000000000001b48                Chip_SSP_SetBitRate
+                0x0000000000001ba4       0x74 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+                0x0000000000001ba4                Chip_SSP_SetBitRate
  .text.Chip_SSP_Init
-                0x0000000000001bbc       0x40 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
-                0x0000000000001bbc                Chip_SSP_Init
+                0x0000000000001c18       0x40 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+                0x0000000000001c18                Chip_SSP_Init
  .text.Chip_SSP_DeInit
-                0x0000000000001bfc       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
-                0x0000000000001bfc                Chip_SSP_DeInit
+                0x0000000000001c58       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+                0x0000000000001c58                Chip_SSP_DeInit
  .text.Chip_Clock_IsMainPLLEnabled
-                0x0000000000001c20       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x0000000000001c7c       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLLocked
-                0x0000000000001c44       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x0000000000001ca0       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLConnected
-                0x0000000000001c68       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x0000000000001cc4       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_EnableCrystal
-                0x0000000000001c8c       0x20 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x0000000000001ce8       0x20 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsCrystalEnabled
-                0x0000000000001cac       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x0000000000001d08       0x24 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_SetMainPLLSource
-                0x0000000000001cd0       0x20 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x0000000000001d2c       0x20 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_SetupXtalClocking
-                0x0000000000001cf0       0x90 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
-                0x0000000000001cf0                Chip_SetupXtalClocking
+                0x0000000000001d4c       0x90 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x0000000000001d4c                Chip_SetupXtalClocking
  .text.Chip_UART_SetupFIFOS
-                0x0000000000001d80       0x1a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000000000001ddc       0x1a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_ConfigData
-                0x0000000000001d9a       0x1a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000000000001df6       0x1a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_EnableDivisorAccess
-                0x0000000000001db4       0x1e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000000000001e10       0x1e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_DisableDivisorAccess
-                0x0000000000001dd2       0x1e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000000000001e2e       0x1e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_SetDivisorLatches
-                0x0000000000001df0       0x26 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
- *fill*         0x0000000000001e16        0x2 ff
+                0x0000000000001e4c       0x26 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ *fill*         0x0000000000001e72        0x2 ff
  .text.Chip_UART_GetClockIndex
-                0x0000000000001e18       0x50 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000000000001e74       0x50 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_GetClkIndex
-                0x0000000000001e68       0x50 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000000000001ec4       0x50 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_Init
-                0x0000000000001eb8       0x78 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x0000000000001eb8                Chip_UART_Init
+                0x0000000000001f14       0x78 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000000000001f14                Chip_UART_Init
  .text.Chip_UART_TXEnable
-                0x0000000000001f30       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x0000000000001f30                Chip_UART_TXEnable
+                0x0000000000001f8c       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000000000001f8c                Chip_UART_TXEnable
  .text.Chip_UART_TXDisable
-                0x0000000000001f48       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x0000000000001f48                Chip_UART_TXDisable
+                0x0000000000001fa4       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000000000001fa4                Chip_UART_TXDisable
  .text.Chip_UART_SetBaud
-                0x0000000000001f60       0x62 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x0000000000001f60                Chip_UART_SetBaud
- .text.__main   0x0000000000001fc2        0xe /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(_cr__main.o)
-                0x0000000000001fc2                __main
- .text._initio  0x0000000000001fd0       0x78 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(initio.o)
-                0x0000000000001fd0                _initio
- .text.setvbuf  0x0000000000002048       0x40 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(setvbuf.o)
-                0x0000000000002048                setvbuf
- .text._fdopen  0x0000000000002088       0x68 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(_fdopen.o)
-                0x0000000000002088                _fdopen
- .text.fclose   0x00000000000020f0       0x58 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(fclose.o)
-                0x00000000000020f0                fclose
- .text.fflush   0x0000000000002148       0x44 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(fflush.o)
-                0x0000000000002148                fflush
- .text.fseek    0x000000000000218c      0x100 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(fseek.o)
-                0x000000000000218c                fseek
- .text.ftell    0x000000000000228c       0x48 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(ftell.o)
-                0x000000000000228c                ftell
- .text.remove   0x00000000000022d4       0x14 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(remove.o)
-                0x00000000000022d4                remove
- .text.strlen   0x00000000000022e8       0x4c /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(strlen.o)
-                0x00000000000022e8                strlen
- .text.memset   0x0000000000002334        0x4 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(memset.o)
-                0x0000000000002334                memset
+                0x0000000000001fbc       0x62 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000000000001fbc                Chip_UART_SetBaud
+ .text.__main   0x000000000000201e        0xe /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(_cr__main.o)
+                0x000000000000201e                __main
+ .text._initio  0x000000000000202c       0x78 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(initio.o)
+                0x000000000000202c                _initio
+ .text.setvbuf  0x00000000000020a4       0x40 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(setvbuf.o)
+                0x00000000000020a4                setvbuf
+ .text._fdopen  0x00000000000020e4       0x68 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(_fdopen.o)
+                0x00000000000020e4                _fdopen
+ .text.fclose   0x000000000000214c       0x58 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(fclose.o)
+                0x000000000000214c                fclose
+ .text.fflush   0x00000000000021a4       0x44 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(fflush.o)
+                0x00000000000021a4                fflush
+ .text.fseek    0x00000000000021e8      0x100 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(fseek.o)
+                0x00000000000021e8                fseek
+ .text.ftell    0x00000000000022e8       0x48 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(ftell.o)
+                0x00000000000022e8                ftell
+ .text.remove   0x0000000000002330       0x14 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(remove.o)
+                0x0000000000002330                remove
+ .text.strlen   0x0000000000002344       0x4c /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(strlen.o)
+                0x0000000000002344                strlen
+ .text.memset   0x0000000000002390        0x4 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(memset.o)
+                0x0000000000002390                memset
  .text._do_fflush
-                0x0000000000002338       0x40 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(_do_fflush.o)
-                0x0000000000002338                _do_fflush
- .text._fflush  0x0000000000002378       0x52 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(_fflush.o)
-                0x0000000000002378                _fflush
- *fill*         0x00000000000023ca        0x2 ff
+                0x0000000000002394       0x40 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(_do_fflush.o)
+                0x0000000000002394                _do_fflush
+ .text._fflush  0x00000000000023d4       0x52 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(_fflush.o)
+                0x00000000000023d4                _fflush
+ *fill*         0x0000000000002426        0x2 ff
  .text._Cwritebuf
-                0x00000000000023cc       0x6c /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(_writebuf.o)
-                0x00000000000023cc                _Cwritebuf
- .text.free     0x0000000000002438       0x30 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(alloc.o)
-                0x0000000000002438                free
+                0x0000000000002428       0x6c /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(_writebuf.o)
+                0x0000000000002428                _Cwritebuf
+ .text.free     0x0000000000002494       0x30 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(alloc.o)
+                0x0000000000002494                free
  .text._deferredlazyseek
-                0x0000000000002468       0x40 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(_deferredlazyseek.o)
-                0x0000000000002468                _deferredlazyseek
+                0x00000000000024c4       0x40 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(_deferredlazyseek.o)
+                0x00000000000024c4                _deferredlazyseek
  .text.__aeabi_memset_lowlevel
-                0x00000000000024a8       0x32 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/libcr_eabihelpers.a(memcpy.o)
-                0x00000000000024a8                __aeabi_lowlevel_memset
+                0x0000000000002504       0x32 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp/libcr_eabihelpers.a(memcpy.o)
+                0x0000000000002504                __aeabi_lowlevel_memset
  .text.__sys_close
-                0x00000000000024da        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_close.o)
-                0x00000000000024da                __sys_close
+                0x0000000000002536        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_close.o)
+                0x0000000000002536                __sys_close
  .text.__sys_flen
-                0x00000000000024e0        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_flen.o)
-                0x00000000000024e0                __sys_flen
+                0x000000000000253c        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_flen.o)
+                0x000000000000253c                __sys_flen
  .text.__sys_istty
-                0x00000000000024e6        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_istty.o)
-                0x00000000000024e6                __sys_istty
+                0x0000000000002542        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_istty.o)
+                0x0000000000002542                __sys_istty
  .text.__sys_remove
-                0x00000000000024ec        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_remove.o)
-                0x00000000000024ec                __sys_remove
+                0x0000000000002548        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_remove.o)
+                0x0000000000002548                __sys_remove
  .text.__sys_seek
-                0x00000000000024f2        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_seek.o)
-                0x00000000000024f2                __sys_seek
+                0x000000000000254e        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_seek.o)
+                0x000000000000254e                __sys_seek
  .text.__sys_tmpnam
-                0x00000000000024f8        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_tmpnam.o)
-                0x00000000000024f8                __sys_tmpnam
+                0x0000000000002554        0x6 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__sys_tmpnam.o)
+                0x0000000000002554                __sys_tmpnam
  *(.rodata .rodata.* .constdata .constdata.*)
- *fill*         0x00000000000024fe        0x2 ff
+ *fill*         0x000000000000255a        0x2 ff
  .rodata.OscRateIn
-                0x0000000000002500        0x4 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x0000000000002500                OscRateIn
+                0x000000000000255c        0x4 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x000000000000255c                OscRateIn
  .rodata.RTCOscRateIn
-                0x0000000000002504        0x4 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x0000000000002504                RTCOscRateIn
+                0x0000000000002560        0x4 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000000000002560                RTCOscRateIn
  .rodata.pinmuxing
-                0x0000000000002508       0x5c /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x0000000000002564       0x5c /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
  .rodata.GPDMA_LUTPerBurst
-                0x0000000000002564       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x0000000000002564                GPDMA_LUTPerBurst
+                0x00000000000025c0       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x00000000000025c0                GPDMA_LUTPerBurst
  .rodata.GPDMA_LUTPerWid
-                0x000000000000257c       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
-                0x000000000000257c                GPDMA_LUTPerWid
+                0x00000000000025d8       0x18 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+                0x00000000000025d8                GPDMA_LUTPerWid
  .rodata._initio.str1.1
-                0x0000000000002594        0x4 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(initio.o)
+                0x00000000000025f0        0x4 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_c.a(initio.o)
  .rodata.__num_Ciob_streams
-                0x0000000000002598        0x4 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__ciob.o)
-                0x0000000000002598                __num_Ciob_streams
-                0x000000000000259c                . = ALIGN (0x4)
+                0x00000000000025f4        0x4 /usr/local/mcuxpressoide-11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libcr_nohost.a(__ciob.o)
+                0x00000000000025f4                __num_Ciob_streams
+                0x00000000000025f8                . = ALIGN (0x4)
 
-.glue_7         0x000000000000259c        0x0
- .glue_7        0x000000000000259c        0x0 linker stubs
+.glue_7         0x00000000000025f8        0x0
+ .glue_7        0x00000000000025f8        0x0 linker stubs
 
-.glue_7t        0x000000000000259c        0x0
- .glue_7t       0x000000000000259c        0x0 linker stubs
+.glue_7t        0x00000000000025f8        0x0
+ .glue_7t       0x00000000000025f8        0x0 linker stubs
 
-.vfp11_veneer   0x000000000000259c        0x0
- .vfp11_veneer  0x000000000000259c        0x0 linker stubs
+.vfp11_veneer   0x00000000000025f8        0x0
+ .vfp11_veneer  0x00000000000025f8        0x0 linker stubs
 
-.v4_bx          0x000000000000259c        0x0
- .v4_bx         0x000000000000259c        0x0 linker stubs
+.v4_bx          0x00000000000025f8        0x0
+ .v4_bx         0x00000000000025f8        0x0 linker stubs
 
-.iplt           0x000000000000259c        0x0
- .iplt          0x000000000000259c        0x0 ./example/src/cr_startup_lpc175x_6x.o
+.iplt           0x00000000000025f8        0x0
+ .iplt          0x00000000000025f8        0x0 ./example/src/cr_startup_lpc175x_6x.o
 
-.rel.dyn        0x000000000000259c        0x0
- .rel.iplt      0x000000000000259c        0x0 ./example/src/cr_startup_lpc175x_6x.o
+.rel.dyn        0x00000000000025f8        0x0
+ .rel.iplt      0x00000000000025f8        0x0 ./example/src/cr_startup_lpc175x_6x.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000000000259c                __exidx_start = .
+                0x00000000000025f8                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000000000000259c                __exidx_end = .
-                0x000000000000259c                _etext = .
+                0x00000000000025f8                __exidx_end = .
+                0x00000000000025f8                _etext = .
 
-.data_RAM2      0x000000002007c000        0x0 load address 0x000000000000259c
+.data_RAM2      0x000000002007c000        0x0 load address 0x00000000000025f8
  FILL mask 0xff
                 [!provide]                        PROVIDE (__start_data_RAM2 = .)
  *(.ramfunc.$RAM2)
@@ -1994,7 +1994,7 @@ END GROUP
                 0x0000000010000000                . = ALIGN (0x4)
                 0x0000000010000000                _end_uninit_RESERVED = .
 
-.data           0x0000000010000000       0x60 load address 0x000000000000259c
+.data           0x0000000010000000       0x60 load address 0x00000000000025f8
  FILL mask 0xff
                 0x0000000010000000                _data = .
  *(vtable)
@@ -2009,7 +2009,7 @@ END GROUP
                 0x0000000010000060                . = ALIGN (0x4)
                 0x0000000010000060                _edata = .
 
-.igot.plt       0x0000000010000060        0x0 load address 0x00000000000025fc
+.igot.plt       0x0000000010000060        0x0 load address 0x0000000000002658
  .igot.plt      0x0000000010000060        0x0 ./example/src/cr_startup_lpc175x_6x.o
 
 .bss_RAM2       0x000000002007c000        0x0
@@ -2079,39 +2079,39 @@ END GROUP
                 0x0000000010008000                PROVIDE (_vStackTop = DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
                 [!provide]                        PROVIDE (__valid_user_code_checksum = (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
                 0x0000000000000000                _image_start = LOADADDR (.text)
-                0x00000000000025fc                _image_end = (LOADADDR (.data) + SIZEOF (.data))
-                0x00000000000025fc                _image_size = (_image_end - _image_start)
+                0x0000000000002658                _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x0000000000002658                _image_size = (_image_end - _image_start)
 OUTPUT(periph_spi.axf elf32-littlearm)
 
-.debug_info     0x0000000000000000     0x84d2
+.debug_info     0x0000000000000000     0x84d9
  .debug_info    0x0000000000000000      0x272 ./example/src/cr_startup_lpc175x_6x.o
  .debug_info    0x0000000000000272      0xea0 ./example/src/spi.o
  .debug_info    0x0000000000001112      0x250 ./example/src/sysinit.o
- .debug_info    0x0000000000001362     0x164a /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_info    0x00000000000029ac      0x71d /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_info    0x00000000000030c9      0x591 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_info    0x000000000000365a      0xc2a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_info    0x0000000000004284     0x1474 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
- .debug_info    0x00000000000056f8      0x347 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_info    0x0000000000005a3f      0x94b /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
- .debug_info    0x000000000000638a      0xcbe /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
- .debug_info    0x0000000000007048      0x4b0 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_info    0x00000000000074f8      0xfda /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_info    0x0000000000001362     0x1651 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_info    0x00000000000029b3      0x71d /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_info    0x00000000000030d0      0x591 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_info    0x0000000000003661      0xc2a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_info    0x000000000000428b     0x1474 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+ .debug_info    0x00000000000056ff      0x347 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_info    0x0000000000005a46      0x94b /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+ .debug_info    0x0000000000006391      0xcbe /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+ .debug_info    0x000000000000704f      0x4b0 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_info    0x00000000000074ff      0xfda /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
-.debug_abbrev   0x0000000000000000     0x1d09
+.debug_abbrev   0x0000000000000000     0x1cfc
  .debug_abbrev  0x0000000000000000      0x117 ./example/src/cr_startup_lpc175x_6x.o
  .debug_abbrev  0x0000000000000117      0x290 ./example/src/spi.o
  .debug_abbrev  0x00000000000003a7       0xeb ./example/src/sysinit.o
- .debug_abbrev  0x0000000000000492      0x420 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_abbrev  0x00000000000008b2      0x1a2 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_abbrev  0x0000000000000a54      0x16d /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_abbrev  0x0000000000000bc1      0x34d /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_abbrev  0x0000000000000f0e      0x2c6 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
- .debug_abbrev  0x00000000000011d4      0x164 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_abbrev  0x0000000000001338      0x226 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
- .debug_abbrev  0x000000000000155e      0x2a7 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
- .debug_abbrev  0x0000000000001805      0x1b0 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_abbrev  0x00000000000019b5      0x354 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_abbrev  0x0000000000000492      0x413 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_abbrev  0x00000000000008a5      0x1a2 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_abbrev  0x0000000000000a47      0x16d /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_abbrev  0x0000000000000bb4      0x34d /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_abbrev  0x0000000000000f01      0x2c6 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+ .debug_abbrev  0x00000000000011c7      0x164 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_abbrev  0x000000000000132b      0x226 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+ .debug_abbrev  0x0000000000001551      0x2a7 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+ .debug_abbrev  0x00000000000017f8      0x1b0 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_abbrev  0x00000000000019a8      0x354 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
 .debug_aranges  0x0000000000000000      0x7e8
  .debug_aranges
@@ -2156,7 +2156,7 @@ OUTPUT(periph_spi.axf elf32-littlearm)
  .debug_ranges  0x00000000000005b0       0x50 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .debug_ranges  0x0000000000000600      0x118 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
-.debug_macro    0x0000000000000000     0x5227
+.debug_macro    0x0000000000000000     0x523f
  .debug_macro   0x0000000000000000       0x1d ./example/src/cr_startup_lpc175x_6x.o
  .debug_macro   0x000000000000001d      0xa9c ./example/src/cr_startup_lpc175x_6x.o
  .debug_macro   0x0000000000000ab9      0x253 ./example/src/spi.o
@@ -2199,59 +2199,59 @@ OUTPUT(periph_spi.axf elf32-littlearm)
  .debug_macro   0x0000000000003cae       0x20 ./example/src/spi.o
  .debug_macro   0x0000000000003cce       0x28 ./example/src/spi.o
  .debug_macro   0x0000000000003cf6      0x217 ./example/src/sysinit.o
- .debug_macro   0x0000000000003f0d      0x289 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_macro   0x0000000000004196       0x12 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_macro   0x00000000000041a8      0x217 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_macro   0x00000000000043bf      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_macro   0x000000000000458c      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_macro   0x0000000000004759      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
- .debug_macro   0x0000000000004926      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_macro   0x0000000000004af3      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
- .debug_macro   0x0000000000004cc0      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
- .debug_macro   0x0000000000004e8d      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_macro   0x000000000000505a      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_macro   0x0000000000003f0d      0x2a1 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_macro   0x00000000000041ae       0x12 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_macro   0x00000000000041c0      0x217 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000000043d7      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000000045a4      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x0000000000004771      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+ .debug_macro   0x000000000000493e      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x0000000000004b0b      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+ .debug_macro   0x0000000000004cd8      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+ .debug_macro   0x0000000000004ea5      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x0000000000005072      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
-.debug_line     0x0000000000000000     0x5cdf
+.debug_line     0x0000000000000000     0x5d21
  .debug_line    0x0000000000000000      0x168 ./example/src/cr_startup_lpc175x_6x.o
  .debug_line    0x0000000000000168      0x766 ./example/src/spi.o
  .debug_line    0x00000000000008ce      0x4f8 ./example/src/sysinit.o
- .debug_line    0x0000000000000dc6      0xa69 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_line    0x000000000000182f      0x549 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_line    0x0000000000001d78      0x50e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_line    0x0000000000002286      0x975 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_line    0x0000000000002bfb      0x938 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
- .debug_line    0x0000000000003533      0x52a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_line    0x0000000000003a5d      0x757 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
- .debug_line    0x00000000000041b4      0xaf5 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
- .debug_line    0x0000000000004ca9      0x5e7 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_line    0x0000000000005290      0xa4f /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_line    0x0000000000000dc6      0xaab /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_line    0x0000000000001871      0x549 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_line    0x0000000000001dba      0x50e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_line    0x00000000000022c8      0x975 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_line    0x0000000000002c3d      0x938 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+ .debug_line    0x0000000000003575      0x52a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_line    0x0000000000003a9f      0x757 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+ .debug_line    0x00000000000041f6      0xaf5 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+ .debug_line    0x0000000000004ceb      0x5e7 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_line    0x00000000000052d2      0xa4f /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
-.debug_str      0x0000000000000000    0x148d9
+.debug_str      0x0000000000000000    0x1492d
  .debug_str     0x0000000000000000     0x2f66 ./example/src/cr_startup_lpc175x_6x.o
                                        0x2f79 (size before relaxing)
  .debug_str     0x0000000000002f66     0xf206 ./example/src/spi.o
                                       0x120d8 (size before relaxing)
  .debug_str     0x000000000001216c       0x23 ./example/src/sysinit.o
                                       0x1135b (size before relaxing)
- .debug_str     0x000000000001218f      0xcdd /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                                      0x12234 (size before relaxing)
- .debug_str     0x0000000000012e6c      0x22d /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_str     0x000000000001218f      0xd31 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                                      0x12288 (size before relaxing)
+ .debug_str     0x0000000000012ec0      0x22d /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
                                       0x1176e (size before relaxing)
- .debug_str     0x0000000000013099       0xac /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_str     0x00000000000130ed       0xac /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
                                       0x113be (size before relaxing)
- .debug_str     0x0000000000013145      0x857 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_str     0x0000000000013199      0x857 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
                                       0x11a3c (size before relaxing)
- .debug_str     0x000000000001399c      0x4a4 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
+ .debug_str     0x00000000000139f0      0x4a4 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(gpdma_17xx_40xx.o)
                                       0x11b01 (size before relaxing)
- .debug_str     0x0000000000013e40       0x74 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_str     0x0000000000013e94       0x74 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
                                       0x10eb9 (size before relaxing)
- .debug_str     0x0000000000013eb4      0x1c1 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
+ .debug_str     0x0000000000013f08      0x1c1 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(spi_17xx_40xx.o)
                                       0x1168b (size before relaxing)
- .debug_str     0x0000000000014075      0x41f /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
+ .debug_str     0x00000000000140c9      0x41f /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(ssp_17xx_40xx.o)
                                       0x1193a (size before relaxing)
- .debug_str     0x0000000000014494       0xc4 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_str     0x00000000000144e8       0xc4 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
                                       0x110a1 (size before relaxing)
- .debug_str     0x0000000000014558      0x381 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_str     0x00000000000145ac      0x381 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
                                       0x11911 (size before relaxing)
 
 .comment        0x0000000000000000       0x75
