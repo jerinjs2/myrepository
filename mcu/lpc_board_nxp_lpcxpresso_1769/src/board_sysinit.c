@@ -32,8 +32,8 @@
 #include "board.h"
 
 /* The System initialization code is called prior to the application and
-   initializes the board for run-time operation. Board initialization
-   includes clock setup and default pin muxing configuration. */
+ initializes the board for run-time operation. Board initialization
+ includes clock setup and default pin muxing configuration. */
 
 /*****************************************************************************
  * Private types/enumerations/variables
@@ -41,33 +41,33 @@
 
 /* Pin muxing configuration */
 STATIC const PINMUX_GRP_T pinmuxing[] = {
-	{0,  0,   IOCON_MODE_INACT | IOCON_FUNC2},	/* TXD3 */
-	{0,  1,   IOCON_MODE_INACT | IOCON_FUNC2},	/* RXD3 */
-	{0,  4,   IOCON_MODE_INACT | IOCON_FUNC2},	/* CAN-RD2 */
-	{0,  5,   IOCON_MODE_INACT | IOCON_FUNC2},	/* CAN-TD2 */
-	{0,  22,  IOCON_MODE_INACT | IOCON_FUNC0},	/* Led 0 */
-	{0,  23,  IOCON_MODE_INACT | IOCON_FUNC1},	/* ADC 0 */
-	{0,  26,  IOCON_MODE_INACT | IOCON_FUNC2},	/* DAC */
+		{ 0, 0, IOCON_MODE_INACT | IOCON_FUNC2 }, /* TXD3 */
+		{ 0, 1, IOCON_MODE_INACT | IOCON_FUNC2 }, /* RXD3 */
+		{ 0, 4, IOCON_MODE_INACT | IOCON_FUNC2 }, /* CAN-RD2 */
+		{ 0, 5, IOCON_MODE_INACT | IOCON_FUNC2 }, /* CAN-TD2 */
+		{ 0, 22, IOCON_MODE_INACT | IOCON_FUNC0 }, /* Led 0 */
+		{ 0, 23, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ADC 0 */
+		{ 0, 26, IOCON_MODE_INACT | IOCON_FUNC2 }, /* DAC */
 
-	/* ENET */
-	{0x1, 0,  IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_TXD0 */
-	{0x1, 1,  IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_TXD1 */
-	{0x1, 4,  IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_TX_EN */
-	{0x1, 8,  IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_CRS */
-	{0x1, 9,  IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_RXD0 */
-	{0x1, 10, IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_RXD1 */
-	{0x1, 14, IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_RX_ER */
-	{0x1, 15, IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_REF_CLK */
-	{0x1, 16, IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_MDC */
-	{0x1, 17, IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_MDIO */
-	{0x1, 27, IOCON_MODE_INACT | IOCON_FUNC1},	/* CLKOUT */
+		/* ENET */
+		{ 0x1, 0, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ENET_TXD0 */
+		{ 0x1, 1, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ENET_TXD1 */
+		{ 0x1, 4, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ENET_TX_EN */
+		{ 0x1, 8, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ENET_CRS */
+		{ 0x1, 9, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ENET_RXD0 */
+		{ 0x1, 10, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ENET_RXD1 */
+		{ 0x1, 14, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ENET_RX_ER */
+		{ 0x1, 15, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ENET_REF_CLK */
+		{ 0x1, 16, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ENET_MDC */
+		{ 0x1, 17, IOCON_MODE_INACT | IOCON_FUNC1 }, /* ENET_MDIO */
+		{ 0x1, 27, IOCON_MODE_INACT | IOCON_FUNC1 }, /* CLKOUT */
 
-	/* Joystick buttons. */
-	{2, 3,  IOCON_MODE_INACT | IOCON_FUNC0},	/* JOYSTICK_UP */
-	{0, 15, IOCON_MODE_INACT | IOCON_FUNC0},	/* JOYSTICK_DOWN */
-	{2, 4,  IOCON_MODE_INACT | IOCON_FUNC0},	/* JOYSTICK_LEFT */
-	{0, 16, IOCON_MODE_INACT | IOCON_FUNC0},	/* JOYSTICK_RIGHT */
-	{0, 17, IOCON_MODE_INACT | IOCON_FUNC0},	/* JOYSTICK_PRESS */
+		/* Joystick buttons. */
+		{ 2, 3, IOCON_MODE_INACT | IOCON_FUNC0 }, /* JOYSTICK_UP */
+		{ 0, 15, IOCON_MODE_INACT | IOCON_FUNC0 }, /* JOYSTICK_DOWN */
+		{ 2, 4, IOCON_MODE_INACT | IOCON_FUNC0 }, /* JOYSTICK_LEFT */
+		{ 0, 16, IOCON_MODE_INACT | IOCON_FUNC0 }, /* JOYSTICK_RIGHT */
+		{ 0, 17, IOCON_MODE_INACT | IOCON_FUNC0 }, /* JOYSTICK_PRESS */
 
 };
 
@@ -84,14 +84,13 @@ STATIC const PINMUX_GRP_T pinmuxing[] = {
  ****************************************************************************/
 
 /* Sets up system pin muxing */
-void Board_SetupMuxing(void)
-{
-	Chip_IOCON_SetPinMuxing(LPC_IOCON, pinmuxing, sizeof(pinmuxing) / sizeof(PINMUX_GRP_T));
+void Board_SetupMuxing(void) {
+	Chip_IOCON_SetPinMuxing(LPC_IOCON, pinmuxing,
+			sizeof(pinmuxing) / sizeof(PINMUX_GRP_T));
 }
 
 /* Setup system clocking */
-void Board_SetupClocking(void)
-{
+void Board_SetupClocking(void) {
 	Chip_SetupXtalClocking();
 
 	/* Setup FLASH access to 4 clocks (100MHz clock) */
@@ -99,8 +98,7 @@ void Board_SetupClocking(void)
 }
 
 /* Set up and initialize hardware prior to call to main */
-void Board_SystemInit(void)
-{
+void Board_SystemInit(void) {
 	Board_SetupMuxing();
 	Board_SetupClocking();
 }

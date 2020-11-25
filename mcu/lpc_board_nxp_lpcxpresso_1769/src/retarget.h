@@ -118,9 +118,9 @@ int ferror(FILE *f)
 
 void _sys_exit(int return_code)
 {
-label:
+	label:
 	__WFI();
-	goto label;	/* endless loop */
+	goto label; /* endless loop */
 }
 
 #endif /* defined (__CC_ARM) */
@@ -160,9 +160,9 @@ _STD_BEGIN
 #pragma module_name = "?__write"
 
 /*
-   If the __write implementation uses internal buffering, uncomment
-   the following line to ensure that we are called with "buffer" as 0
-   (i.e. flush) when the application terminates. */
+ If the __write implementation uses internal buffering, uncomment
+ the following line to ensure that we are called with "buffer" as 0
+ (i.e. flush) when the application terminates. */
 size_t __write(int handle, const unsigned char *buffer, size_t size)
 {
 #if defined(DEBUG_ENABLE)
@@ -170,15 +170,15 @@ size_t __write(int handle, const unsigned char *buffer, size_t size)
 
 	if (buffer == 0) {
 		/*
-		   This means that we should flush internal buffers.  Since we
-		   don't we just return.  (Remember, "handle" == -1 means that all
-		   handles should be flushed.)
+		 This means that we should flush internal buffers.  Since we
+		 don't we just return.  (Remember, "handle" == -1 means that all
+		 handles should be flushed.)
 		 */
 		return 0;
 	}
 
 	/* This template only writes to "standard out" and "standard err",
-	   for all other file handles it returns failure. */
+	 for all other file handles it returns failure. */
 	if (( handle != _LLIO_STDOUT) && ( handle != _LLIO_STDERR) ) {
 		return _LLIO_ERROR;
 	}
@@ -205,12 +205,12 @@ _STD_END
 
 #if (__REDLIB_INTERFACE_VERSION__ >= 20000)
 /* We are using new Redlib_v2 semihosting interface */
-	#define WRITEFUNC __sys_write
-	#define READFUNC __sys_readc
+#define WRITEFUNC __sys_write
+#define READFUNC __sys_readc
 #else
 /* We are using original Redlib semihosting interface */
-	#define WRITEFUNC __write
-	#define READFUNC __readc
+#define WRITEFUNC __write
+#define READFUNC __readc
 #endif
 
 #if defined(DEBUG_ENABLE)
@@ -220,8 +220,7 @@ _STD_END
 #endif /* defined(DEBUG_ENABLE) */
 
 #if !defined(DEBUG_SEMIHOSTING)
-int WRITEFUNC(int iFileHandle, char *pcBuffer, int iLength)
-{
+int WRITEFUNC(int iFileHandle, char *pcBuffer, int iLength) {
 #if defined(DEBUG_ENABLE)
 	unsigned int i;
 	for (i = 0; i < iLength; i++) {
@@ -233,11 +232,10 @@ int WRITEFUNC(int iFileHandle, char *pcBuffer, int iLength)
 }
 
 /* Called by bottom level of scanf routine within RedLib C library to read
-   a character. With the default semihosting stub, this would read the character
-   from the debugger console window (which acts as stdin). But this version reads
-   the character from the LPC1768/RDB1768 UART. */
-int READFUNC(void)
-{
+ a character. With the default semihosting stub, this would read the character
+ from the debugger console window (which acts as stdin). But this version reads
+ the character from the LPC1768/RDB1768 UART. */
+int READFUNC(void) {
 #if defined(DEBUG_ENABLE)
 	char c = Board_UARTGetChar();
 	return (int) c;
