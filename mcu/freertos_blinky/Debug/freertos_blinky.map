@@ -2701,7 +2701,7 @@ END GROUP
                 0x00000000000044d4                _image_size = (_image_end - _image_start)
 OUTPUT(freertos_blinky.axf elf32-littlearm)
 
-.debug_info     0x0000000000000000     0x71de
+.debug_info     0x0000000000000000     0x71dd
  .debug_info    0x0000000000000000      0x2f8 ./freertos/src/FreeRTOSCommonHooks.o
  .debug_info    0x00000000000002f8      0x282 ./freertos/src/heap_3.o
  .debug_info    0x000000000000057a      0x439 ./freertos/src/list.o
@@ -2710,13 +2710,13 @@ OUTPUT(freertos_blinky.axf elf32-littlearm)
  .debug_info    0x0000000000002327      0x272 ./example/src/cr_startup_lpc175x_6x.o
  .debug_info    0x0000000000002599      0x2fb ./example/src/freertos_blinky.o
  .debug_info    0x0000000000002894      0x250 ./example/src/sysinit.o
- .debug_info    0x0000000000002ae4     0x1651 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_info    0x0000000000004135      0x71d /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_info    0x0000000000004852      0x591 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_info    0x0000000000004de3      0xc2a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_info    0x0000000000005a0d      0x347 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_info    0x0000000000005d54      0x4b0 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_info    0x0000000000006204      0xfda /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_info    0x0000000000002ae4     0x1650 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_info    0x0000000000004134      0x71d /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_info    0x0000000000004851      0x591 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_info    0x0000000000004de2      0xc2a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_info    0x0000000000005a0c      0x347 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_info    0x0000000000005d53      0x4b0 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_info    0x0000000000006203      0xfda /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
 .debug_abbrev   0x0000000000000000     0x1cbf
  .debug_abbrev  0x0000000000000000      0x181 ./freertos/src/FreeRTOSCommonHooks.o
@@ -2857,7 +2857,7 @@ OUTPUT(freertos_blinky.axf elf32-littlearm)
  .debug_macro   0x0000000000005f15      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .debug_macro   0x00000000000060e2      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
-.debug_line     0x0000000000000000     0x6fd7
+.debug_line     0x0000000000000000     0x6fd9
  .debug_line    0x0000000000000000      0x67e ./freertos/src/FreeRTOSCommonHooks.o
  .debug_line    0x000000000000067e      0x620 ./freertos/src/heap_3.o
  .debug_line    0x0000000000000c9e      0x6e9 ./freertos/src/list.o
@@ -2866,13 +2866,13 @@ OUTPUT(freertos_blinky.axf elf32-littlearm)
  .debug_line    0x0000000000002f04      0x168 ./example/src/cr_startup_lpc175x_6x.o
  .debug_line    0x000000000000306c      0x69c ./example/src/freertos_blinky.o
  .debug_line    0x0000000000003708      0x4f8 ./example/src/sysinit.o
- .debug_line    0x0000000000003c00      0xaab /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_line    0x00000000000046ab      0x549 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_line    0x0000000000004bf4      0x50e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_line    0x0000000000005102      0x975 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_line    0x0000000000005a77      0x52a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_line    0x0000000000005fa1      0x5e7 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_line    0x0000000000006588      0xa4f /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_line    0x0000000000003c00      0xaad /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_line    0x00000000000046ad      0x549 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_line    0x0000000000004bf6      0x50e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_line    0x0000000000005104      0x975 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_line    0x0000000000005a79      0x52a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_line    0x0000000000005fa3      0x5e7 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_line    0x000000000000658a      0xa4f /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
 .debug_str      0x0000000000000000    0x17492
  .debug_str     0x0000000000000000    0x1342e ./freertos/src/FreeRTOSCommonHooks.o

@@ -3718,7 +3718,7 @@ END GROUP
                 0x0000000000006ac8                _image_size = (_image_end - _image_start)
 OUTPUT(lpcusblib_KeyboardHost.axf elf32-littlearm)
 
-.debug_info     0x0000000000000000     0xeb6a
+.debug_info     0x0000000000000000     0xeb69
  .debug_info    0x0000000000000000     0x20b6 ./lpcusblib/Drivers/USB/Core/HCD/OHCI/OHCI.o
  .debug_info    0x00000000000020b6      0x705 ./lpcusblib/Drivers/USB/Core/HCD/HCD.o
  .debug_info    0x00000000000027bb      0xb72 ./lpcusblib/Drivers/USB/Core/HAL/LPC17XX/HAL_LPC17xx.o
@@ -3735,13 +3735,13 @@ OUTPUT(lpcusblib_KeyboardHost.axf elf32-littlearm)
  .debug_info    0x000000000000936c      0xc42 ./example/src/KeyboardHost.o
  .debug_info    0x0000000000009fae      0x272 ./example/src/cr_startup_lpc175x_6x.o
  .debug_info    0x000000000000a220      0x250 ./example/src/sysinit.o
- .debug_info    0x000000000000a470     0x1651 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_info    0x000000000000bac1      0x71d /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_info    0x000000000000c1de      0x591 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_info    0x000000000000c76f      0xc2a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_info    0x000000000000d399      0x347 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_info    0x000000000000d6e0      0x4b0 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_info    0x000000000000db90      0xfda /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_info    0x000000000000a470     0x1650 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_info    0x000000000000bac0      0x71d /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_info    0x000000000000c1dd      0x591 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_info    0x000000000000c76e      0xc2a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_info    0x000000000000d398      0x347 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_info    0x000000000000d6df      0x4b0 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_info    0x000000000000db8f      0xfda /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
 .debug_abbrev   0x0000000000000000     0x332e
  .debug_abbrev  0x0000000000000000      0x44c ./lpcusblib/Drivers/USB/Core/HCD/OHCI/OHCI.o
@@ -3963,7 +3963,7 @@ OUTPUT(lpcusblib_KeyboardHost.axf elf32-littlearm)
  .debug_macro   0x000000000000998b      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .debug_macro   0x0000000000009b58      0x1cd /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
-.debug_line     0x0000000000000000     0xe86b
+.debug_line     0x0000000000000000     0xe86d
  .debug_line    0x0000000000000000     0x17b0 ./lpcusblib/Drivers/USB/Core/HCD/OHCI/OHCI.o
  .debug_line    0x00000000000017b0      0xa6f ./lpcusblib/Drivers/USB/Core/HCD/HCD.o
  .debug_line    0x000000000000221f      0xaeb ./lpcusblib/Drivers/USB/Core/HAL/LPC17XX/HAL_LPC17xx.o
@@ -3980,13 +3980,13 @@ OUTPUT(lpcusblib_KeyboardHost.axf elf32-littlearm)
  .debug_line    0x0000000000009be4     0x1250 ./example/src/KeyboardHost.o
  .debug_line    0x000000000000ae34      0x168 ./example/src/cr_startup_lpc175x_6x.o
  .debug_line    0x000000000000af9c      0x4f8 ./example/src/sysinit.o
- .debug_line    0x000000000000b494      0xaab /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_line    0x000000000000bf3f      0x549 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_line    0x000000000000c488      0x50e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_line    0x000000000000c996      0x975 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_line    0x000000000000d30b      0x52a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_line    0x000000000000d835      0x5e7 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_line    0x000000000000de1c      0xa4f /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_line    0x000000000000b494      0xaad /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_line    0x000000000000bf41      0x549 /home/jerin/Work/myrepository/mcu/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_line    0x000000000000c48a      0x50e /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_line    0x000000000000c998      0x975 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_line    0x000000000000d30d      0x52a /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_line    0x000000000000d837      0x5e7 /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_line    0x000000000000de1e      0xa4f /home/jerin/Work/myrepository/mcu/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
 .debug_str      0x0000000000000000    0x1e8b4
  .debug_str     0x0000000000000000    0x14c85 ./lpcusblib/Drivers/USB/Core/HCD/OHCI/OHCI.o
